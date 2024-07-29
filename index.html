@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- css--------------------------------------- -->
+  <link rel="stylesheet" href="./styles/slick.css" />
+  <link rel="stylesheet" href="./styles/slick-theme.css" />
+  <link rel="stylesheet" href="./node_modules/hover.css/css/hover-min.css" />
+  <link rel="stylesheet" href="./node_modules/animate.css/animate.css" />
+
+  <!-- my styles -->
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="./styles/adaptive.css" />
+  <!-- JS------------------------------------------------------------ -->
+
+
+  <script src="./node_modules/jquery/dist/jquery.min.js" defer></script>
+  <script src="./scripts/slick.min.js" defer></script>
+  <script src="./node_modules/wow.js/dist/wow.js" defer></script>
+  <!-- <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js" defer></script> -->
+  <script src="./node_modules/jquery.inputmask/dist/jquery.inputmask.bundle.js" defer></script>
+  <script src="./scripts/main.js?v=2" defer></script>
+  <title>Бургерная</title>
+</head>
+
+<body>
+  <section class="main">
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <img src="./images/logo.png" alt="logo" />
+        </div>
+        <nav class="menu">
+          <ul class="menu-list">
+            <li class="menu-item hvr-pulse">
+              <a href="#menu-burgers">Меню</a>
+            </li>
+            <li class="menu-item hvr-pulse">
+              <a href="#our-advantages">Наши преимущества</a>
+            </li>
+            <li class="menu-item hvr-pulse">
+              <a href="#about-boomburger">О Boomburger</a>
+            </li>
+            <li class="menu-item hvr-pulse">
+              <a href="#our-feedbacks">Отзывы</a>
+            </li>
+            <li class="menu-item hvr-pulse">
+              <a href="#our-promotions">Акции</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="adress">
+          <div class="placeholder-mark">
+            <img src="./images/placeholder.png" alt="placeholder" />
+          </div>
+          <div class="adress-text">
+            г. Москва, м. Лубянка Никольская ул., 24
+          </div>
+        </div>
+        <div class="close">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+            <path
+              d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+          </svg>
+        </div>
+        <div class="burger-menu">
+          <div class="menu-strip"></div>
+          <div class="menu-strip"></div>
+          <div class="menu-strip"></div>
+        </div>
+      </div>
+    </header>
+
+    <section class="main-content">
+      <div class="container main-container">
+        <div class="main-info">
+          <h1 class="main-title">
+            <span>Сочные бургеры <br /></span><span> из свежих продуктов</span>
+          </h1>
+          <div class="main-text">
+            <p>Приходите попробовать наши бургеры.</p>
+            <p>
+              Благодаря открытой кухне вы сможете увидеть процесс
+              приготовления вашего любимого фастфуда
+            </p>
+          </div>
+          <div class="main-action">
+            <button class="button hvr-bounce-in" id="main-button">
+              Забронировать стол
+            </button>
+          </div>
+          <div class="main-advantages">
+            <div class="advantage">
+              <div class="advantage-image">
+                <img src="./images/chef.png" alt="chef" />
+              </div>
+              <div class="advantage-text">
+                Огромный выбор бургеров из любого мяса, птицы и морепродуктов
+              </div>
+            </div>
+            <div class="advantage">
+              <div class="advantage-image">
+                <img src="./images/food-tray.png" alt="food tray" />
+              </div>
+              <div class="advantage-text">
+                Приготовим бургер любого размера за 15 минут или забирайте
+                бесплатнов
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-image animate__animated wow animate__tada">
+          <img src="./images/burger-in-fire2.png" alt="burger" />
+          <div class="main-image-info">
+            <div class="main-image-title">Грязный СанчеZ</div>
+            <div class="main-image-text">
+              котлета из мраморной говядины, бекон, сыр чеддер, салат,вишневый
+              соус, фирменный соус
+            </div>
+          </div>
+          <div class="action-label">
+            <div class="action-label-text">Акция 28.07-29.07</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+  <section class="boomburger" id="about-boomburger">
+    <div class="container">
+      <div class="boomburger-content">
+        <h2 class="boomburger-title">О BoomBurger</h2>
+        <p class="boomburger-text">
+          Команда «BB» решила найти рецепт идеального бургера, который смог бы
+          утолить любой голод и быть настоящим произведением искусства!
+        </p>
+        <p class="boomburger-text">
+          Мы отправились в гастрономическое путешествие по разным странам,
+          катались по городам Америки и Европы в поисках лучших секретов
+          бургерной индустрии… но в результате поняли — идеальный бургер — это
+          бургер, приготовленный из качественных ингредиентов.
+        </p>
+
+        <div class="boomburger-image wow animate__animated animate__backInRight">
+          <img class="boomburger-line-large" src="./images/3burgers-line.png" alt="three burgers" />
+          <img class="boomburger-line-small" src="./images/3burgerslineSmall.png" alt="3burgers" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="what-difference" id="our-advantages">
+    <div class="container">
+      <div class="what-difference-content">
+        <h2 class="what-difference-title">Чем мы отличаемся</h2>
+
+        <div class="what-difference-items">
+          <div class="difference-item item1">
+            <div class="difference-item-image">
+              <img src="./images/plant.png" alt="tree" />
+            </div>
+            <div class="difference-item-text">
+              Только натуральные фермерские продукты
+            </div>
+          </div>
+          <div class="what-difference-image wow slideInLeft animate__animated animate__backInDown"
+            data-wow-delay="0.5s">
+            <img class="burger-onien-large" src="./images/burger-onien-large.png" alt="burger with onion" />
+            <img class="burger-onien-small" src="./images/burger-onien-small.png" alt="burger" />
+          </div>
+          <div class="difference-item item2">
+            <div class="difference-item-image">
+              <img src="./images/dance.png" alt="two human" />
+            </div>
+            <div class="difference-item-text">
+              В нашем ресторане всегда атмосфера праздника
+            </div>
+          </div>
+          <div class="difference-item item3">
+            <div class="difference-item-image">
+              <img src="./images/cooking.png" alt="frying pan" />
+            </div>
+            <div class="difference-item-text">
+              Открытая кухня — посмотрите, как готовится ваш бургер
+            </div>
+          </div>
+          <div class="difference-item item4">
+            <div class="difference-item-image">
+              <img src="./images/dog (1).png" alt="dog" />
+            </div>
+            <div class="difference-item-text">
+              Dog friendly — к нам можно с четвероногим другом
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="burgers-menu" id="menu-burgers">
+    <div class="container">
+      <div class="burgers-menu-content">
+        <h2 class="burgers-menu-title">Меню</h2>
+        <div class="burgers-menu-types">
+          <div class="menu-type hvr-bob">
+            <div class="menu-type-image">
+              <img src="./images/chicken.png" alt="chicken" />
+            </div>
+            <div class="menu-type-name">цыпленок</div>
+          </div>
+          <div class="menu-type hvr-bob visible-active">
+            <div class="menu-type-image">
+              <img src="./images/cow.png" alt="cow" />
+            </div>
+            <div class="menu-type-name">говядина</div>
+          </div>
+          <div class="menu-type hvr-bob">
+            <div class="menu-type-image">
+              <img src="./images/duck.png" alt="duck" />
+            </div>
+            <div class="menu-type-name">утка</div>
+          </div>
+          <div class="menu-type hvr-bob">
+            <div class="menu-type-image">
+              <img src="./images/crab.png" alt="crab" />
+            </div>
+            <div class="menu-type-name">краб</div>
+          </div>
+        </div>
+        <!-- ----------------------------------------------------slider chiken------------------- -->
+        <div class="burger-slider" data-slick='{"slidesToShow": 4, "slidesToScroll": 1}'>
+          <div class="burger-slider-item">
+            <div class="burger-slider-image">
+              <img src="./images/chicken/chicken1.png" alt="burger" />
+            </div>
+            <div class="burger-slider-title">Золотой гребешок</div>
+            <div class="burger-slider-text">
+              котлета из курицы, сыр чеддер, салат, вишневый соус, фирменный
+              соус
+            </div>
+          </div>
+
+          <div class="burger-slider-item">
+            <div class="burger-slider-image">
+              <img src="./images/chicken/chicken2.png" alt="burger" />
+            </div>
+            <div class="burger-slider-title">Куриный восторг</div>
+            <div class="burger-slider-text">
+              котлета из куриц, сыр чеддер, помидор, салат, фирменный соус
+              барбекю
+            </div>
+          </div>
+          <div class="burger-slider-item">
+            <div class="burger-slider-image">
+              <img src="./images/chicken/chicken3.png" alt="burger" />
+            </div>
+            <div class="burger-slider-title">Кукареку</div>
+            <div class="burger-slider-text">
+              котлета из мраморной говядины, маринованный огурчик, сыр чеддер,
+              помидор, салат
+            </div>
+          </div>
+          <div class="burger-slider-item">
+            <div class="burger-slider-image">
+              <img src="./images/chicken/cicken4.png" alt="burger" />
+            </div>
+            <div class="burger-slider-title">Рябушка</div>
+            <div class="burger-slider-text">
+              котлета из мраморной говядины, бекон, сыр чеддер, помидор,
+              салат, фирменный соус барбекю
+            </div>
+          </div>
+          <div class="burger-slider-item">
+            <div class="burger-slider-image">
+              <img src="./images/chicken/chicken5.png" alt="burger" />
+            </div>
+            <div class="burger-slider-title">Петушок</div>
+            <div class="burger-slider-text">
+              котлета из мраморной говядины, бекон, сыр чеддер, помидор,
+              салат, фирменный соус барбекю
+            </div>
+          </div>
+          <div class="burger-slider-item">
+            <div class="burger-slider-image">
+              <img src="./images/chicken/chicken5.png" alt="burger" />
+            </div>
+            <div class="burger-slider-title">Самая быстрая курочка Запада</div>
+            <div class="burger-slider-text">
+              котлета из мраморной говядины, бекон, сыр чеддер, помидор,
+              салат, фирменный соус барбекю
+            </div>
+          </div>
+        </div>
+
+        <!-- beef slider---------------------------------------------- -->
+        <div class="burger-slider visible-active" data-slick='{"slidesToShow": 4, "slidesToScroll": 1}'>
+          <div class="burger-slider-item">
+            <div class="burger-slider-image">
+              <img src="./images/beef/burger1.png" alt="burger" />
+            </div>
+            <div class="burger-slider-title">Грязный СанчеZ</div>
+            <div class="burger-slider-text">
+              котлета из мраморной говядины, бекон, сыр чеддер, салат,
+              вишневый соус, фирменный соус
+            </div>
+          </div>
+
+          <div class="burger-slider-item">
+            <div class="burger-slider-image">
+              <img src="./images/beef/burger2.png" alt="burger" />
+            </div>
+            <div class="burger-slider-title">Красавчик Элвин</div>
+            <div class="burger-slider-text">
+              котлета из мраморной говядины, бекон, сыр чеддер, помидор,
+              салат, фирменный соус барбекю
+            </div>
+          </div>
+          <div class="burger-slider-item">
+            <div class="burger-slider-image">
+              <img src="./images/beef/burger3.png" alt="burger" />
+            </div>
+            <div class="burger-slider-title">Местный шериф</div>
+            <div class="burger-slider-text">
+              котлета из мраморной говядины, маринованный огурчик, сыр чеддер,
+              помидор, салат
+            </div>
+          </div>
+          <div class="burger-slider-item">
+            <div class="burger-slider-image">
+              <img src="./images/beef/burger4.png" alt="burger" />
+            </div>
+            <div class="burger-slider-title">Дух Капитализма</div>
+            <div class="burger-slider-text">
+              котлета из мраморной говядины, бекон, сыр чеддер, помидор,
+              салат, фирменный соус барбекю
+            </div>
+          </div>
+          <div class="burger-slider-item">
+            <div class="burger-slider-image">
+              <img src="./images/beef/burger5.png" alt="burger" />
+            </div>
+            <div class="burger-slider-title">Толстый бычок</div>
+            <div class="burger-slider-text">
+              котлета из мраморной говядины, бекон, сыр чеддер, помидор,
+              салат, фирменный соус барбекю
+            </div>
+          </div>
+          <div class="burger-slider-item">
+            <div class="burger-slider-image">
+              <img src="./images/beef/burger6.png" alt="burger" />
+            </div>
+            <div class="burger-slider-title">Сытая корова</div>
+            <div class="burger-slider-text">
+              котлета из мраморной говядины, бекон, сыр чеддер, помидор,
+              салат, фирменный соус барбекю
+            </div>
+          </div>
+        </div>
+
+        <!-- -----slider-duck -->
+        <div class="burger-slider" data-slick='{"slidesToShow": 4, "slidesToScroll": 1}'>
+          <div class="burger-slider-item">
+            <div class="burger-slider-image">
+              <img src="./images/duck/duck1.png" alt="burger" />
+            </div>
+            <div class="burger-slider-title">Веселый кряк</div>
+            <div class="burger-slider-text">
+              котлета из мраморной говядины, бекон, сыр чеддер, салат,
+              вишневый соус, фирменный соус
+            </div>
+          </div>
+
+          <div class="burger-slider-item">
+            <div class="burger-slider-image">
+              <img src="./images/duck/duck2.png" alt="burger" />
+            </div>
+            <div class="burger-slider-title">Утконос рекордсмен</div>
+            <div class="burger-slider-text">
+              котлета из мраморной говядины, бекон, сыр чеддер, помидор,
+              салат, фирменный соус барбекю
+            </div>
+          </div>
+          <div class="burger-slider-item">
+            <div class="burger-slider-image">
+              <img src="./images/duck/duck3.png" alt="burger" />
+            </div>
+            <div class="burger-slider-title">Утиный паштет</div>
+            <div class="burger-slider-text">
+              котлета из мраморной говядины, маринованный огурчик, сыр чеддер,
+              помидор, салат
+            </div>
+          </div>
+          <div class="burger-slider-item">
+            <div class="burger-slider-image">
+              <img src="./images/duck/duck4.png" alt="burger" />
+            </div>
+            <div class="burger-slider-title">Ути-Пути</div>
+            <div class="burger-slider-text">
+              котлета из мраморной говядины, бекон, сыр чеддер, помидор,
+              салат, фирменный соус барбекю
+            </div>
+          </div>
+          <div class="burger-slider-item">
+            <div class="burger-slider-image">
+              <img src="./images/duck/duck5.png" alt="burger" />
+            </div>
+            <div class="burger-slider-title">Утиный полет</div>
+            <div class="burger-slider-text">
+              котлета из мраморной говядины, бекон, сыр чеддер, помидор,
+              салат, фирменный соус барбекю
+            </div>
+          </div>
+          <div class="burger-slider-item">
+            <div class="burger-slider-image">
+              <img src="./images/duck/duck6.png" alt="burger" />
+            </div>
+            <div class="burger-slider-title">Утиные лапки</div>
+            <div class="burger-slider-text">
+              котлета из мраморной говядины, бекон, сыр чеддер, помидор,
+              салат, фирменный соус барбекю
+            </div>
+          </div>
+        </div>
+        <!-- ----slider-seafood -->
+        <div class="burger-slider" data-slick='{"slidesToShow": 4, "slidesToScroll": 1}'>
+          <div class="burger-slider-item">
+            <div class="burger-slider-image">
+              <img src="./images/seafood/sea1.png" alt="burger" />
+            </div>
+            <div class="burger-slider-title">Крабик на солнце</div>
+            <div class="burger-slider-text">
+              котлета из мраморной говядины, бекон, сыр чеддер, салат,
+              вишневый соус, фирменный соус
+            </div>
+          </div>
+
+          <div class="burger-slider-item">
+            <div class="burger-slider-image">
+              <img src="./images/seafood/sea2.png" alt="burger" />
+            </div>
+            <div class="burger-slider-title">Синий крабсбургер</div>
+            <div class="burger-slider-text">
+              котлета из мраморной говядины, бекон, сыр чеддер, помидор,
+              салат, фирменный соус барбекю
+            </div>
+          </div>
+          <div class="burger-slider-item">
+            <div class="burger-slider-image">
+              <img src="./images/seafood/sea3.png" alt="burger" />
+            </div>
+            <div class="burger-slider-title">Морской дьявол</div>
+            <div class="burger-slider-text">
+              котлета из мраморной говядины, маринованный огурчик, сыр чеддер,
+              помидор, салат
+            </div>
+          </div>
+          <div class="burger-slider-item">
+            <div class="burger-slider-image">
+              <img src="./images/seafood/sea4.png" alt="burger" />
+            </div>
+            <div class="burger-slider-title">Морская жемчужина</div>
+            <div class="burger-slider-text">
+              котлета из мраморной говядины, бекон, сыр чеддер, помидор,
+              салат, фирменный соус барбекю
+            </div>
+          </div>
+          <div class="burger-slider-item">
+            <div class="burger-slider-image">
+              <img src="./images/seafood/sea5.png" alt="burger" />
+            </div>
+            <div class="burger-slider-title">Толстая креветка</div>
+            <div class="burger-slider-text">
+              котлета из мраморной говядины, бекон, сыр чеддер, помидор,
+              салат, фирменный соус барбекю
+            </div>
+          </div>
+          <div class="burger-slider-item">
+            <div class="burger-slider-image">
+              <img src="./images/seafood/sea6.png" />
+            </div>
+            <div class="burger-slider-title">Веселый Роджер</div>
+            <div class="burger-slider-text">
+              котлета из мраморной говядины, бекон, сыр чеддер, помидор,
+              салат, фирменный соус барбекю
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="feedbacks" id="our-feedbacks">
+    <div class="container">
+      <div class="feedbacks-content">
+        <h2 class="feedback-title">Отзывы</h2>
+        <div id="feedback-slider" data-slick='{"slidesToShow": 3, "slidesToScroll": 1}'>
+
+          <div class="feedback-item">
+            <div class="feedback-network">
+              <div class="feedback-network-icon"><a href="#"><img src="./images/feedback/facebookavatar.png"
+                    alt="icon facebook"></a>
+              </div>
+              <div class="feedback-network-icon"><a href="#"><img src="./images/feedback/instaavatar.png"
+                    alt="icon instagram"></a>
+              </div>
+            </div>
+            <div class="feedback-user-name">Роман</div>
+            <p class="favorite-burger">Любимый бургер: </p>
+            <p class="favorite-burger-name">Самая быстрая курочка Запада (KING SIZE)</p>
+            <p class="feedback-text">Круто отметили день рождения
+              Прекрасное обслуживание, заказали
+              15 бургеров на всех, никто не остался равнодушным! В общем Я рекомендую этот ресторан - Наш ресторан.</p>
+            <div class="feedback-avatar"><img src="./images/feedback/avatar1.png" alt="avatar"></div>
+          </div>
+
+
+          <div class="feedback-item">
+            <div class="feedback-network">
+              <div class="feedback-network-icon"><a href="#"><img src="./images/feedback/facebookavatar.png"
+                    alt="icon facebook"></a>
+              </div>
+              <div class="feedback-network-icon"><a href="#"><img src="./images/feedback/instaavatar.png"
+                    alt="icon instagram"></a>
+              </div>
+            </div>
+            <div class="feedback-user-name">Мария</div>
+            <p class="favorite-burger">Любимый бургер: </p>
+            <p class="favorite-burger-name">Синий крабсбургер</p>
+            <p class="feedback-text">Очень нравится формат заведения, такого раньше не видела! Бургеры очень интересные
+              по вкусу. Ингредиенты тоже супер: необычные, качественные, вкусные (корень лотоса, морепродукты). </p>
+            <div class="feedback-avatar"><img src="./images/feedback/avatar2.png" alt="avatar"></div>
+          </div>
+
+
+          <div class="feedback-item">
+            <div class="feedback-network">
+              <div class="feedback-network-icon"><a href="#"><img src="./images/feedback/facebookavatar.png"
+                    alt="icon facebook"></a>
+              </div>
+              <div class="feedback-network-icon"><a href="#"><img src="./images/feedback/instaavatar.png"
+                    alt="icon instagram"></a>
+              </div>
+            </div>
+            <div class="feedback-user-name">Наталия</div>
+            <p class="favorite-burger">Любимый бургер: </p>
+            <p class="favorite-burger-name">Завтрак Капитана Америки</p>
+            <p class="feedback-text">О кухне слышала много хороших отзывов,все правда. Большие порции, опять таки
+              оооочень вкусно. Рекомендую этот ресторан, всем именинникам – каждому уделяют особое внимание. </p>
+            <div class="feedback-avatar"><img src="./images/feedback/avatar3.png" alt="avatar"></div>
+          </div>
+
+          <div class="feedback-item">
+            <div class="feedback-network">
+              <div class="feedback-network-icon"><a href="#"><img src="./images/feedback/facebookavatar.png"
+                    alt="icon facebook"></a>
+              </div>
+              <div class="feedback-network-icon"><a href="#"><img src="./images/feedback/instaavatar.png"
+                    alt="icon instagram"></a>
+              </div>
+            </div>
+            <div class="feedback-user-name">Ник</div>
+            <p class="favorite-burger">Любимый бургер: </p>
+            <p class="favorite-burger-name">Грязный СанчеZ</p>
+            <p class="feedback-text">Уютное место, посидели хорошо с друзьями.Рекомендую</p>
+            <div class="feedback-avatar"><img src="./images/feedback/avatar4.png" alt=""></div>
+          </div>
+
+
+          <div class="feedback-item">
+            <div class="feedback-network">
+              <div class="feedback-network-icon"><a href="#"><img src="./images/feedback/facebookavatar.png"
+                    alt="icon facebook"></a>
+              </div>
+              <div class="feedback-network-icon"><a href="#"><img src="./images/feedback/instaavatar.png"
+                    alt="icon instagram"></a>
+              </div>
+            </div>
+            <div class="feedback-user-name">Валерий</div>
+            <p class="favorite-burger">Любимый бургер: </p>
+            <p class="favorite-burger-name">Дух Капитализма</p>
+            <p class="feedback-text">Я тут постоянный клиент. Все очень круто. вкусно и по карману.</p>
+            <div class="feedback-avatar"><img src="./images/feedback/avatar5.png" alt="avatar"></div>
+          </div>
+
+          <div class="feedback-item">
+            <div class="feedback-network">
+              <div class="feedback-network-icon"><a href="#"><img src="./images/feedback/facebookavatar.png"
+                    alt="icon facebook"></a>
+              </div>
+              <div class="feedback-network-icon"><a href="#"><img src="./images/feedback/instaavatar.png"
+                    alt="icon instagram"></a>
+              </div>
+            </div>
+            <div class="feedback-user-name">Татьяна</div>
+            <p class="favorite-burger">Любимый бургер: </p>
+            <p class="favorite-burger-name">Утиный полет</p>
+            <p class="feedback-text">Бургеры с уткой - это просто бомба!!! Рекомендую.</p>
+            <div class="feedback-avatar"><img src="./images/feedback/avatar6.png" alt="avatar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="our-promotions" id="our-promotions">
+    <div class="container">
+      <div class="our-promotions-content">
+        <h2 class="our-promotions-title">Наши акции</h2>
+        <div class="promotion-block2 wow animate__animated animate__heartBeat animate__repeat-3">
+          <img src="./images/Акции.png" alt="cards with promotions" />
+        </div>
+        <div class="promotions-offers-wrapper wow animate__animated animate__heartBeat animate__repeat-3">
+          <div class="promotion-item offer1">
+            <img class="offer1-large" src="./images/offer1.png" alt="banner with offer vegan burger " />
+          </div>
+          <div class="promotion-item offer2">
+            <img class="offer2-large" src="./images/offer2.png" alt="banner with offer test-burgers" />
+          </div>
+          <div class="promotion-item offer3">
+            <img class="offer3-large" src="./images/offer3.png" alt="banner with offer for big company" />
+          </div>
+          <div class="promotion-item offer4">
+            <img class="offer4-large" src="./images/offer4.png" alt="banner with offer seafood burgers" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="order">
+    <div class="container">
+      <div class="order-content">
+        <h2 class="order-title">Забронировать стол</h2>
+        <div class="order-form-wrapper">
+          <div class="order-image wow animate__animated animate__backInLeft">
+            <img src="./images/order-burger.png" alt="very big burger" />
+          </div>
+          <div class="order-form-content">
+            <div class="order-invitation">
+              Ждем тебя в BoomBurger прямо сейчас. Оформи бронь в течение 30
+              минут и получи напиток в подарок!
+            </div>
+            <div class="order-counter-wrapper">
+              <div class="counter">3</div>
+              <div class="counter">0</div>
+              <div class="counter"><span>:</span></div>
+              <div class="counter">0</div>
+              <div class="counter">0</div>
+            </div>
+            <div class="lable-wrapper">
+              <div class="counter-lable">минуты</div>
+              <div class="counter-lable">секунды</div>
+            </div>
+            <form id="order-form" method="post">
+              <div class="customer customer-name">
+                <input type="text" placeholder="Ваше имя" />
+              </div>
+              <div class="not-valid-data">Введите Ваше имя</div>
+              <div class="customer customer-phone">
+                <input type="text" placeholder="+7(___)___-__-_" />
+              </div>
+              <div class="not-valid-data">Введите Ваш номер телефона</div>
+              <div class="customer order-actiom">
+                <button class="button hvr-buzz-out" id="order-button">
+                  Забронировать стол
+                </button>
+              </div>
+            </form>
+            <div class="order-message">
+              Нажимая на кнопку вы подтверждаете ваше согласие с
+              <a href="#">политикой конфиденциальности</a> и обработкой
+              персональных данных
+            </div>
+            <div class="peppers-image wow animate__animated animate__backInDown" data-wow-delay="1s">
+              <img src="./images/twoPeppers.png" alt="two red peppers" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="thanks-for-order wow animate__animated animate__jello">
+        <p>Спасибо за заказ.</p>
+        <p>Мы свяжемся с Вами в течении 30минут.</p>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer-border"></div>
+    <div class="container">
+      <div class="footer-content">
+        <div class="logo"><img src="./images/logo.png" alt="logo" /></div>
+        <div class="footer-adress">
+          <p>г. Москва, м.Лубянка, Никольская ул., 24</p>
+          <p>+7 (495) 221-24-34, +7 (495) 287-24-96</p>
+        </div>
+        <div class="social-network">
+          <div class="network-item">
+            <img src="./images/facebook.png" alt="facebook mark" />
+          </div>
+          <div class="network-item">
+            <img src="./images/instagram.png" alt="instagram mark" />
+          </div>
+          <div class="network-item">
+            <img src="./images/youtube.png" alt="youtube mark" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="loader-wrapper">
+    <div class="loader"></div>
+  </div>
+</body>
+
+</html>
